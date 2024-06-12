@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../../css/payment.css">
+</head>
+<body>
+    <div class="header">
+        <div class="info-pengguna">
+            <img src="../../assets/images/profil_akun.png" alt="Foto Pengguna" class="foto-pengguna">
+            <div class="detail-pengguna">
+                <div class="nama-pengguna">Fadhila Amalia</div>
+                <div class="username-pengguna">fadhilafath_</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header-image-container">
+            <img src="../../assets/images/payment.png" alt="Header Image" class="header-image">
+        </div>
+        <div class="payment-section">
+            <h2>Payment</h2>
+            <div class="total">
+                <span>Total</span>
+                <div class="amount">Rp1.000.000</div>
+            </div>
+            <div class="payment-method">
+                <span>Metode Pembayaran</span>
+                <div class="virtual-account">
+                    <div class="bank-logo"><img src="../../assets/images/bca-logo.jpg" alt="BCA"></div>
+                    <div class="bank-logo"><img src="../../assets/images/bri-logo.jpg" alt="BRI"></div>
+                    <div class="bank-logo"><img src="../../assets/images/mandiri-logo.jpg" alt="Mandiri"></div>
+                    <div class="bank-logo"><img src="../../assets/images/bni-logo.jpg" alt="BNI"></div>
+                </div>
+            </div>
+            <button class="next-button" id="nextButton">Next</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            window.location.href = 'status_booking.html';
+        });
+    </script>
+</body>
+</html>

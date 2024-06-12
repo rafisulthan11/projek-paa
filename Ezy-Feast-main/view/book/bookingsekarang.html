@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizzme Jember</title>
+    <link rel="stylesheet" href="../../css/bookingsekarang.css">
+</head>
+<body>
+    <div class="header">
+        <div class="info-pengguna">
+            <img src="../../assets/images/profil_akun.png" alt="Foto Pengguna" class="foto-pengguna">
+            <div class="detail-pengguna">
+                <div class="nama-pengguna">Fadhila Amalia</div>
+                <div class="username-pengguna">fadhilafath_</div>
+            </div>
+        </div>
+    </div>
+    <div class="kontainer">
+        <div class="form-kontainer">
+            <h1>Wizzme Jember</h1>
+            <form id="bookingForm">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama">
+                
+                <div class="tanggal-waktu">
+                    <div class="tanggal">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="text" id="tanggal" name="tanggal" placeholder="dd/mm/yy">
+                    </div>
+                    <div class="waktu">
+                        <label for="waktu">Waktu</label>
+                        <input type="text" id="waktu" name="waktu" placeholder="00:00">
+                    </div>
+                </div>
+                
+                <label for="acara">Acara</label>
+                <input type="text" id="acara" name="acara">
+                
+                <label for="jumlah-orang">Jumlah Orang</label>
+                <input type="text" id="jumlah-orang" name="jumlah-orang">
+                
+                <div class="radio-kontainer">
+                    <input type="radio" id="pengajuan" name="pengajuan" value="Pengajuan">
+                    <label for="pengajuan">Pengajuan</label>
+                </div>
+                
+                <div class="checkbox-kontainer">
+                    <input type="checkbox" id="konfirmasi" name="konfirmasi">
+                    <label for="konfirmasi">Centang jika data yang Anda masukkan sudah benar!</label>
+                </div>
+                
+                <button type="submit">Booking Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            window.location.href = 'payment.html'; // Redirect to payment.html
+        });
+    </script>
+</body>
+</html>

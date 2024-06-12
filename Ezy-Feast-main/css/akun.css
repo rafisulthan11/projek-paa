@@ -1,0 +1,145 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    background-color: #f8f9fa;
+}
+.sidebar .logo img {
+    max-width: 100%;
+}
+.sidebar .logo p {
+    margin: 0;
+}
+.sidebar .nav-pills .nav-link {
+    color: #333;
+}
+.sidebar .nav-pills .nav-link.active,
+.sidebar .nav-pills .nav-link:hover {
+    background-color: #e9ecef;
+}
+.sidebar .parent ul.dropdown-content {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+.sidebar .parent.active ul.dropdown-content {
+    display: block;
+}
+
+.header {
+    width: calc(100% - 280px);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .user-info .details {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.header .user-info .details .username {
+    font-weight: bold;
+}
+.content {
+    margin-left: 280px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #FFF6D8;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-box {
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.content-box img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+.content-box .content-details {
+    padding: 20px;
+    position: relative;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-box .user-info {
+    color: #EA6A12;
+}
+.content-box .user-info .name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.content-box .user-info .username {
+    font-size: 1em;
+    font-weight: normal;
+}
+.content-box .edit-profile-btn {
+    align-self: flex-end;
+    background-color: #EA6A12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-profile-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.edit-form.active {
+    display: block;
+}
+
+.edit-form .btn-secondary {
+    background-color: #EA6A12;
+    border-color: #EA6A12;
+}
+
+.edit-form .btn-primary {
+    background-color: #EA6A12;
+    border-color: #EA6A12;
+}
+
+.edit-form .btn-group.mt-3 {
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.edit-form .btn {
+    padding: 8px 16px; /* Adjust button size to be slightly smaller than the "Edit Profile" button */
+    font-size: 14px; /* Slightly smaller font size */
+}

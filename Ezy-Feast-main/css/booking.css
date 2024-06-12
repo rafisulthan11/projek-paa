@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    background-color: #f8f9fa;
+}
+
+.sidebar .logo img {
+    max-width: 100%;
+}
+
+.sidebar .logo p {
+    margin: 0;
+}
+
+.sidebar .nav-pills .nav-link {
+    color: #333;
+}
+
+.sidebar .nav-pills .nav-link.active,
+.sidebar .nav-pills .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.sidebar .parent ul.dropdown-content {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.sidebar .parent.active ul.dropdown-content {
+    display: block;
+}
+
+.header {
+    width: calc(100% - 280px);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header .user-info .details {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.header .user-info .details .username {
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 280px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #FFF6D8;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.content-box {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: calc(100vh - 160px);
+}
+
+.content-details {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tabs .tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tabs .tab-button.active {
+    border-bottom: 3px solid #FF7043;
+    color: #FF7043;
+}
+
+.booking-section {
+    display: block;
+}
+
+.completed-section {
+    display: none;
+}
+
+.card {
+    display: flex;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-small {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.status .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating .fa-star {
+    color: #FFD700;
+    margin-right: 5px;
+}
+
+.rating .rating-score {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.booking-button {
+    background-color: #FEB51F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 48.37px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-button i {
+    margin-left: 10px;
+}

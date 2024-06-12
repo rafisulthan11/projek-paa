@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Booking</title>
+    <link rel="stylesheet" href="../../css/status_booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+    <style>
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                margin: 20px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            .user-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Status Booking</h1>
+        <div class="user-details">
+            <img src="../../assets/images/profil_akun.png" alt="User Profile Picture" class="profile-pic">
+            <div class="user-info">
+                <div class="user-name">Fadhila Amalia</div>
+                <div class="user-email">fadhila@example.com</div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="header-image">
+            <img src="../../assets/images/header_ezyfeast.png" alt="Header Image" class="header-img">
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="order-info">
+                    <p>Nomor Pesanan</p>
+                    <h2>000000111</h2>
+                    <hr>
+                    <p>Status Transaksi</p>
+                    <div class="status unpaid">Unpaid</div>
+                    <hr>
+                    <div class="total">
+                        <span>Total Pembayaran:</span>
+                        <span>Rp2.000.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="payment-info">
+                    <p class="expiry-label">Pesanan akan kadaluwarsa pada</p>
+                    <div class="expiry-time">2 jam, 59 menit, 4 detik</div>
+                    <div class="payment-method">
+                        <p>Metode Pembayaran</p>
+                        <div>BRI VIRTUAL ACCOUNT</div>
+                    </div>
+                    <div class="payment-number">
+                        <span>Nomor Pembayaran:</span>
+                        <span>126437363674621</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-invoice">
+            <button>Selesai</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('selesai').addEventListener('click', function() {
+            window.location.href = 'booking.html';
+        });
+    </script>
+</body>
+</html>

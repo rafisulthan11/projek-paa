@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5D7; /* Warna latar belakang sesuai gambar */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-pengguna {
+    display: flex;
+    align-items: center;
+}
+
+.foto-pengguna {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.detail-pengguna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nama-pengguna {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #333; /* Warna teks */
+}
+
+.username-pengguna {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.kontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-kontainer {
+    background-color: white;
+    padding: 30px; /* Menambahkan padding untuk memperlebar background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Memperlebar form */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333; /* Warna teks */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333; /* Warna teks */
+    text-align: left; /* Mengembalikan teks label ke kiri */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.tanggal-waktu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tanggal, .waktu {
+    width: 48%;
+}
+
+.radio-kontainer, .checkbox-kontainer {
+    margin: 15px 0;
+    text-align: left; /* Mengembalikan teks label ke kiri */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #F47822; /* Warna tombol sesuai gambar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #D4601A; /* Warna hover untuk tombol */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}

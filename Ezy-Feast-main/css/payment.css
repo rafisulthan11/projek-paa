@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF7E0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-pengguna {
+    display: flex;
+    align-items: center;
+}
+
+.foto-pengguna {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.detail-pengguna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nama-pengguna {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #333; /* Warna teks */
+}
+
+.username-pengguna {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px auto; /* Jarak antara header dan gambar */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header-image-container {
+    width: 100%;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.payment-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.payment-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between; /* Mengatur agar elemen rata kiri dan kanan */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.total .amount {
+    background-color: #C6D67D;
+    padding: 10px 30px; /* Mengatur padding untuk menambah lebar */
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 90px; /* Memberikan jarak antara tulisan Total dan jumlahnya */
+}
+
+
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.virtual-account {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bank-logo img {
+    width: 60px;
+    height: auto;
+}
+
+.next-button {
+    background-color: #FF7A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #e66a00;
+}
